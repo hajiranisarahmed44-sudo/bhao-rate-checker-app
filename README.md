@@ -46,4 +46,8 @@ Check out the live app here:
 
 ---
 
-**Built with ❤️ to make service pricing transparent for everyone in Pakistan.**
+**Built with ❤️ to make service pricing transparent for everyone in Pakistan.**## 📸 App Screenshots
+
+![Home Page](home-page.png)
+![Trending Rates](trending-rate.png)
+![Upload Rate](upload-rate.png)
