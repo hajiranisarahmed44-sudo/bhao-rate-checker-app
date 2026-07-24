@@ -1,0 +1,136 @@
+import { ServiceRate } from '../types';
+
+export const INITIAL_SERVICES: ServiceRate[] = [
+  {
+    id: 'ceiling-fan-repair',
+    title: 'Ceiling Fan Repair',
+    category: 'Electrician',
+    verifiedCount: 142,
+    fairPercentage: 88,
+    minPrice: 800,
+    maxPrice: 1200,
+    locations: ['Model Town', 'Johar Town', 'Gulberg', 'DHA'],
+    gaugePosition: 45, // Fair zone
+    userVotes: { fair: 125, overcharged: 17 },
+    subTasks: [
+      { id: 'st-1', name: 'Capacitor Replacement', minPrice: 350, maxPrice: 500 },
+      { id: 'st-2', name: 'Bearing Replacement', minPrice: 700, maxPrice: 900 },
+      { id: 'st-3', name: 'Full Motor Rewinding', minPrice: 1200, maxPrice: 1600 },
+      { id: 'st-4', name: 'Unmounting & Rehanging', minPrice: 250, maxPrice: 400 },
+    ],
+    receipts: [
+      { id: 'r-1', location: 'Johar Town', timeAgo: '2 days ago', amountPaid: 900, isVerified: true },
+      { id: 'r-2', location: 'Model Town', timeAgo: '5 days ago', amountPaid: 1500, isVerified: false, notes: 'Charged Rs. 300 extra for capacitor' },
+      { id: 'r-3', location: 'DHA Phase 5', timeAgo: '1 week ago', amountPaid: 1000, isVerified: true },
+      { id: 'r-4', location: 'Gulberg III', timeAgo: '2 weeks ago', amountPaid: 1100, isVerified: true },
+    ],
+  },
+  {
+    id: 'ac-service-gas',
+    title: 'AC Master Service & Gas Refill',
+    category: 'AC Repair',
+    verifiedCount: 289,
+    fairPercentage: 84,
+    minPrice: 2500,
+    maxPrice: 4000,
+    locations: ['Gulberg', 'DHA Phase 6', 'Johar Town', 'Askari 11'],
+    gaugePosition: 50,
+    userVotes: { fair: 242, overcharged: 47 },
+    subTasks: [
+      { id: 'st-ac-1', name: 'General Chemical Wash', minPrice: 1800, maxPrice: 2500 },
+      { id: 'st-ac-2', name: 'R410a Gas Top-up', minPrice: 3000, maxPrice: 4500 },
+      { id: 'st-ac-3', name: 'Capacitor & Relay Change', minPrice: 1200, maxPrice: 1800 },
+      { id: 'st-ac-4', name: 'Copper Pipe Installation (per ft)', minPrice: 350, maxPrice: 450 },
+    ],
+    receipts: [
+      { id: 'r-ac-1', location: 'Gulberg III', timeAgo: 'Yesterday', amountPaid: 3200, isVerified: true },
+      { id: 'r-ac-2', location: 'DHA Phase 6', timeAgo: '3 days ago', amountPaid: 5800, isVerified: false, notes: 'Overcharged for gas' },
+      { id: 'r-ac-3', location: 'Johar Town', timeAgo: '4 days ago', amountPaid: 2800, isVerified: true },
+    ],
+  },
+  {
+    id: 'plumbing-drainage',
+    title: 'Drainage Pipe Unclogging',
+    category: 'Plumber',
+    verifiedCount: 95,
+    fairPercentage: 79,
+    minPrice: 1000,
+    maxPrice: 1800,
+    locations: ['Model Town', 'Faisal Town', 'Johar Town'],
+    gaugePosition: 60,
+    userVotes: { fair: 75, overcharged: 20 },
+    subTasks: [
+      { id: 'st-p-1', name: 'Kitchen Drain Snake Cleaning', minPrice: 1000, maxPrice: 1500 },
+      { id: 'st-p-2', name: 'Main Line Pressure Flush', minPrice: 1800, maxPrice: 2500 },
+      { id: 'st-p-3', name: 'Mixer Tap & Valve Replacement', minPrice: 600, maxPrice: 1000 },
+    ],
+    receipts: [
+      { id: 'r-p-1', location: 'Faisal Town', timeAgo: '1 day ago', amountPaid: 1200, isVerified: true },
+      { id: 'r-p-2', location: 'Johar Town', timeAgo: '6 days ago', amountPaid: 2400, isVerified: false },
+    ],
+  },
+  {
+    id: 'ups-wiring',
+    title: 'UPS & Inverter Wiring Fix',
+    category: 'Electrician',
+    verifiedCount: 112,
+    fairPercentage: 91,
+    minPrice: 1500,
+    maxPrice: 2500,
+    locations: ['Cantt', 'DHA Phase 3', 'Wapda Town'],
+    gaugePosition: 40,
+    userVotes: { fair: 102, overcharged: 10 },
+    subTasks: [
+      { id: 'st-u-1', name: 'Changeover Switch Installation', minPrice: 800, maxPrice: 1200 },
+      { id: 'st-u-2', name: 'Battery Terminal Cleaning & Cabling', minPrice: 500, maxPrice: 800 },
+      { id: 'st-u-3', name: 'Full Circuit Load Balancing', minPrice: 1800, maxPrice: 2800 },
+    ],
+    receipts: [
+      { id: 'r-u-1', location: 'Wapda Town', timeAgo: '3 days ago', amountPaid: 1800, isVerified: true },
+      { id: 'r-u-2', location: 'Cantt', timeAgo: '1 week ago', amountPaid: 2000, isVerified: true },
+    ],
+  },
+  {
+    id: 'water-tank-cleaning',
+    title: 'Overhead Water Tank Cleaning',
+    category: 'Plumber',
+    verifiedCount: 78,
+    fairPercentage: 86,
+    minPrice: 2000,
+    maxPrice: 3500,
+    locations: ['Johar Town', 'Model Town', 'Garden Town'],
+    gaugePosition: 48,
+    userVotes: { fair: 67, overcharged: 11 },
+    subTasks: [
+      { id: 'st-wt-1', name: '500 Gallon Tank Chemical Scrub', minPrice: 2000, maxPrice: 2800 },
+      { id: 'st-wt-2', name: '1000 Gallon Underground Reservoir', minPrice: 3200, maxPrice: 4500 },
+    ],
+    receipts: [
+      { id: 'r-wt-1', location: 'Garden Town', timeAgo: '4 days ago', amountPaid: 2500, isVerified: true },
+    ],
+  },
+];
+
+export const LAHORE_LOCATIONS = [
+  'Johar Town, Lahore',
+  'Gulberg, Lahore',
+  'DHA Phase 1-8, Lahore',
+  'Model Town, Lahore',
+  'Faisal Town, Lahore',
+  'Cantt, Lahore',
+  'Wapda Town, Lahore',
+  'Garden Town, Lahore',
+  'Bahria Town, Lahore',
+  'Iqbal Town, Lahore',
+];
+
+export const SERVICE_CATEGORIES = [
+  'All',
+  'Electrician',
+  'Plumber',
+  'AC Repair',
+  'Painter',
+  'Appliance Fix',
+  'Carpenter',
+  'Mason / Civil Work',
+];

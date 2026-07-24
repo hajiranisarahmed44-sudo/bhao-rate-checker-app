@@ -1,0 +1,6 @@
+{
+  "name": "Bhao Rate Checker",
+  "description": "Bhao Service Rate Checker Lahore - Transparent service pricing and receipt verification app for Pakistan",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
