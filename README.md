@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Bhao Rate Checker
 
-# Run and deploy your AI Studio app
+Bhao Rate Checker ek simple web app hai jo Pakistan me different services ke average market rates batati hai. Maqsad ye hai ke logon ko pata ho kisi kaam ka "fair rate" kya chal raha hai.
 
-This contains everything you need to run your app locally.
+## 🔥 Features
+- **City Wise Rates**: Lahore, Karachi, Islamabad ke rates alag
+- **Service Categories**: AC Service, Plumber, Electrician, Painter
+- **Verified Data**: Logon ne jo asal me pay kiya usi ki base pe rate
+- **Community Voting**: Har rate ko Fair / High / Low vote kar sakte hain
+- **No Commission**: Hum sirf information dete hain, booking nahi karte
 
-View your app in AI Studio: https://ai.studio/apps/bc135812-cb2a-45f8-9862-9ed833e88e1d
+## 🚀 Live Demo
+👉 [https://bhao-rate-checker-app.vercel.app](https://bhao-rate-checker-app.vercel.app)
 
-## Run Locally
+## 🛠 Tech Stack
+- HTML5, CSS3, JavaScript
+- Deployed on Vercel
+- Hosted on GitHub
 
-**Prerequisites:**  Node.js
+## 📌 Future Plans
+- User se rate submit karwane ka form
+- Aur cities aur services add karna
+- Fake rate rokne ke liye receipt upload option
 
+## 👨‍💻 Developer
+**Name**: Hajira Nisar Ahmed  
+**GitHub**: [@hajiranisarahmed44-sudo](https://github.com/hajiranisarahmed44-sudo)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+*Ye project "Build that wild idea" ke liye banaya gaya hai.*
